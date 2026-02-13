@@ -224,12 +224,50 @@
                         </div>
                     </div>
                     <div class="lg:w-1/2 bg-gray-50 p-8 md:p-12 rounded-sm border border-gray-100">
-                        <form onsubmit="event.preventDefault(); alert('Thank you for contacting Sabarwal Law. We will get back to you shortly.');" class="space-y-6">
+                        <!-- <form onsubmit="event.preventDefault(); alert('Thank you for contacting Sabarwal Law. We will get back to you shortly.');" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div><label class="block text-xs font-bold uppercase text-brand-navy mb-2">Your Name</label><input type="text" class="w-full bg-white border border-gray-200 px-4 py-3" required></div><div><label class="block text-xs font-bold uppercase text-brand-navy mb-2">Your Email</label><input type="email" class="w-full bg-white border border-gray-200 px-4 py-3" required></div></div>
                             <div><label class="block text-xs font-bold uppercase text-brand-navy mb-2">Subject</label><input type="text" class="w-full bg-white border border-gray-200 px-4 py-3"></div>
                             <div><label class="block text-xs font-bold uppercase text-brand-navy mb-2">Message</label><textarea rows="5" class="w-full bg-white border border-gray-200 px-4 py-3" required></textarea></div>
                             <button type="submit" class="w-full bg-brand-gold hover:bg-brand-navy text-white font-bold uppercase py-4">Send Message</button>
+                        </form> -->
+
+                        <form id="contact-form"
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSeiuOn3Fm05NWdnVG48yeUcyzM9bXsa-yMBdwU0IaD2lFy57w/formResponse"
+                            method="POST" target="hidden_iframe" class="space-y-6">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase mb-2">Your Name</label>
+                                    <input type="text" name="entry.958388725" class="w-full border px-4 py-3" required>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold uppercase mb-2">Your Email</label>
+                                    <input type="email" name="entry.1362750300" class="w-full border px-4 py-3"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase mb-2">Subject</label>
+                                <input type="text" name="entry.1857876057" class="w-full border px-4 py-3">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase mb-2">Message</label>
+                                <textarea rows="5" name="entry.407808012" class="w-full border px-4 py-3"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-brand-gold hover:bg-brand-navy text-white font-bold py-4">
+                                Send Message
+                            </button>
                         </form>
+
+                        <!-- Prevent redirect -->
+                        <iframe name="hidden_iframe" style="display:none;"></iframe>
+
                     </div>
                 </div>
             </div>
@@ -243,18 +281,29 @@
                     <span class="text-brand-gold">Law</span>
                 </div> -->
                  <a href="index.html" class="flex items-center gap-2">
-                     <img src="images/Sabarwal-Law.png" alt="Company Logo" class="h-16 w-auto"></a>
+                     <img src="images/footer-logo.png" alt="Company Logo" class="h-16 w-auto"></a>
                 <div class="text-sm text-center md:text-right">
                     <div class="flex gap-4 justify-center md:justify-end text-xs uppercase tracking-wider">
                         <a href="#" class="hover:text-white">Disclaimer</a>
                         <span class="text-gray-700">|</span>
                         <a href="#" class="hover:text-white">Privacy Policy</a>
                     </div>
-                    <p class="mb-2">Copyright © 2025 Sabarwal Law | All Rights Reserved</p>
+                    <p class="mb-2">Copyright © 2026 Sabarwal Law | All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script>
+        // Store data in Google form 
+        document.getElementById("contact-form").addEventListener("submit", function () {
+            setTimeout(() => {
+                alert("✅ Thank you! Your message has been submitted successfully.");
+                this.reset();
+            }, 500);
+        });
+    </script>
 
     <script>
         const header = document.getElementById('header');
