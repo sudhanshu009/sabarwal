@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Impact | Sabarwal Law</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/png" href="images/fav-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {theme: {extend: {colors: {brand: {navy: '#1a2b49', gold: '#c5a059', goldHover: '#b08d4b', dark: '#111827', light: '#f3f4f6'}}, fontFamily: {serif: ['"Playfair Display"', 'serif'], sans: ['"Lato"', 'sans-serif']}, backgroundImage: {'hero-pattern': "linear-gradient(rgba(26, 43, 73, 0.75), rgba(26, 43, 73, 0.6)), url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"}}}}
+    </script>
+    <style>
+        body { font-family: 'Lato', sans-serif; }h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }.nav-link { position: relative; cursor: pointer; }.nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #c5a059; transition: width 0.3s; }.nav-link:hover::after, .nav-link.active::after { width: 100%; }.group:hover .dropdown-menu { display: block; animation: fadeIn 0.3s; }@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="text-gray-700 antialiased flex flex-col min-h-screen">
+    <header class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-2">
+                    <!-- <div class="w-10 h-10 bg-brand-navy flex items-center justify-center rounded-sm text-brand-gold text-xl font-serif font-bold">S</div> -->
+                     <img src="images/Sabarwal-Law.png" alt="Company Logo" class="h-14 w-auto"></a>
+                <!-- <div class="flex flex-col"><span class="text-2xl font-serif font-bold text-brand-navy tracking-wide uppercase leading-none">Sabarwal</span><span class="text-sm text-brand-gold tracking-[0.2em] uppercase leading-none mt-1">Law</span></div></a> -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <nav class="flex space-x-6 text-sm font-bold uppercase tracking-wider text-brand-navy">
+                        <a href="index.html" class="nav-link transition">Home</a>
+                        <a href="about.html" class="nav-link transition">About</a>
+                        <!-- <div class="relative group">
+                            <button class="nav-link hover:text-brand-gold transition flex items-center gap-1">PRACTICE AREAS <i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            <div class="dropdown-menu absolute hidden left-0 mt-0 w-56 bg-white shadow-xl border-t-4 border-brand-gold rounded-b-sm">
+                                <a href="small-business.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">Small Business Law</a>
+                                <a href="employment.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">Employment Law</a>
+                                <a href="family.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">Family Law</a>
+                                <a href="personal-injury.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold transition">Personal Injury</a>
+                            </div>
+                        </div> -->
+                        <div class="relative group">
+                            <button class="nav-link hover:text-brand-gold transition flex items-center gap-1">PRACTICE AREAS <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-hover:rotate-180"></i></button>
+                            <div class="absolute left-0 top-full w-56 bg-white shadow-xl border-t-4 border-brand-gold rounded-b-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+
+                                <a href="small-business.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">
+                                    Small Business Law
+                                </a>
+
+                                <a href="employment.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">
+                                    Employment Law
+                                </a>
+
+                                <a href="family.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold border-b border-gray-100 transition">
+                                    Family Law
+                                </a>
+
+                                <a href="personal-injury.html" class="block px-4 py-3 hover:bg-gray-50 text-brand-navy hover:text-brand-gold transition">
+                                    Personal Injury
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <a href="blog.html" class="nav-link transition">Blog</a>
+                        <a href="faq.html" class="nav-link transition">F.A.Q.</a>
+                        <a href="immigration.html" class="nav-link transition">Immigration Impact</a>
+                    </nav>
+                    <div class="flex items-center gap-6">
+                        <a href="contact.html" class="bg-brand-gold hover:bg-brand-navy text-white text-xs font-bold uppercase tracking-widest px-6 py-3 transition duration-300 rounded-3xl">Contact Us</a>
+                        <!-- <a href="tel:5622504471" class="text-brand-navy font-bold hover:text-brand-gold transition">562.250.4471</a> -->
+                         <a href="tel:5622504471" class="flex items-center gap-2 text-brand-navy font-bold hover:text-brand-gold transition border-l border-gray-400 pl-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+
+                            562.250.4471
+                        </a>
+
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-brand-navy text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 lg:hidden pt-28 px-6 overflow-y-auto">
+        <nav class="flex flex-col space-y-4 text-center">
+            <a href="index.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Home</a>
+            <a href="about.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">About</a>
+            <a href="small-business.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Small Business Law</a>
+            <a href="employment.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Employment Law</a>
+            <a href="family.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Family Law</a>
+            <a href="personal-injury.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Personal Injury</a>
+            <a href="blog.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Blog</a>
+            <a href="faq.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">F.A.Q.</a>
+            <a href="immigration.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Immigration Impact</a>
+            <a href="tel:5622504471" class="text-xl font-bold text-brand-gold py-4">562.250.4471</a>
+            <a href="contact.html" class="text-lg font-bold text-brand-navy py-2 border-b border-gray-100">Contact Us</a>
+        </nav>
+    </div>
+    <main class="flex-grow mt-24">
+        <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat">
+            <div class="text-center text-white px-4 max-w-4xl mx-auto">
+                <h2 class="text-sm md:text-base font-bold uppercase tracking-[0.3em] mb-4 text-brand-gold">News & Updates</h2>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 leading-tight">Immigration Impact</h1>
+            </div>
+        </section>
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid gap-16">
+                    <article class="flex flex-col border-b border-gray-200 pb-16">
+                        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4 hover:text-brand-gold transition cursor-pointer">House GOP's Immigration Framework Recreates Trump's Border Wish List</h2>
+                        <div class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-6">August 18, 2022</div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">As midterm election season heats up, House Republicans on the "American Security Task Force" have produced a new framework for what they say is a plan to "secure the border." Despite the claim of new ideas to tackle the situation at the border, the framework is almost identical to prior legislative and administrative efforts...</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="#" class="text-brand-navy font-bold text-sm uppercase tracking-widest border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition">Read More</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-col border-b border-gray-200 pb-16">
+                        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4 hover:text-brand-gold transition cursor-pointer">Recent Supreme Court Ruling Limits Advocates' Relief on Asylum Seekers' Case</h2>
+                        <div class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-6">August 17, 2022</div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">A federal court decision this month confirmed what advocates feared: that a recent move by the Supreme Court would undermine the fight against illegal government practices, like turning back asylum seekers at the border. On August 5, a federal court concluded that it could not issue an injunction against this unlawful U.S. government behavior...</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="#" class="text-brand-navy font-bold text-sm uppercase tracking-widest border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition">Read More</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-col border-b border-gray-200 pb-16">
+                        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4 hover:text-brand-gold transition cursor-pointer">Urgent Immigration Measures Rest With the Senate After August Recess</h2>
+                        <div class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-6">August 16, 2022</div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">When members of Congress return from their August recess, they will find several immigration measures urgently awaiting their attention. The House Appropriations Committee already has passed a funding bill for the Department of Homeland Security (DHS), and the full House has passed both the Farm Workforce Modernization Act and the National Defense Authorization Act...</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="#" class="text-brand-navy font-bold text-sm uppercase tracking-widest border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition">Read More</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-col border-b border-gray-200 pb-16">
+                        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4 hover:text-brand-gold transition cursor-pointer">Who Enforces Immigration Policy Anyway?</h2>
+                        <div class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-6">August 10, 2022</div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">The lack of a major overhaul in the United States' immigration system for roughly thirty years has created an ecosystem where states have attempted to insert their authority over immigration, especially when it comes to enforcement. Texas has made headlines with its tougher approach and outsized role...</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="#" class="text-brand-navy font-bold text-sm uppercase tracking-widest border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition">Read More</a>
+                        </div>
+                    </article>
+                    <article class="flex flex-col">
+                        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4 hover:text-brand-gold transition cursor-pointer">Senate Rejects Harmful Immigration Amendments to Inflation Reduction Act</h2>
+                        <div class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-6">August 8, 2022</div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">On Sunday after nearly 24 hours of deliberation, the Senate passed a historic budget reconciliation package, known as the "Inflation Reduction Act," that rejected a series of harsh immigration enforcement provisions and approved a myriad of federal programs climate change, tax enforcement, and healthcare...</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="#" class="text-brand-navy font-bold text-sm uppercase tracking-widest border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- <div class="text-2xl font-serif font-bold text-white uppercase tracking-wide">Sabarwal 
+                    <span class="text-brand-gold">Law</span>
+                </div> -->
+                 <a href="index.html" class="flex items-center gap-2">
+                     <img src="images/logo-small.svg" alt="Company Logo" class="h-16 w-auto"></a>
+                <div class="text-sm text-center md:text-right">
+                    <div class="flex gap-4 justify-center md:justify-end text-xs uppercase tracking-wider">
+                        <a href="#" class="hover:text-white">Disclaimer</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="#" class="hover:text-white">Privacy Policy</a>
+                    </div>
+                    <p class="mb-2">Copyright © 2025 Sabarwal Law | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { if (window.scrollY > 50) header.classList.add('py-0'); else header.classList.remove('py-0'); });
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('translate-x-full');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>
