@@ -231,10 +231,7 @@
                             <button type="submit" class="w-full bg-brand-gold hover:bg-brand-navy text-white font-bold uppercase py-4">Send Message</button>
                         </form> -->
 
-                        <form id="contact-form"
-                            action="https://docs.google.com/forms/d/e/1FAIpQLSeiuOn3Fm05NWdnVG48yeUcyzM9bXsa-yMBdwU0IaD2lFy57w/formResponse"
-                            method="POST" target="hidden_iframe" class="space-y-6">
-
+                        <form id="contact-form" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-bold uppercase mb-2">Your Name</label>
@@ -296,12 +293,29 @@
 
 
     <script>
-        // Store data in Google form 
-        document.getElementById("contact-form").addEventListener("submit", function () {
-            setTimeout(() => {
+            // Store contact us data on google form
+            document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+
+            formData.append("entry.958388725", this.querySelector('[name="entry.958388725"]').value);
+            formData.append("entry.1362750300", this.querySelector('[name="entry.1362750300"]').value);
+            formData.append("entry.1857876057", this.querySelector('[name="entry.1857876057"]').value);
+            formData.append("entry.407808012", this.querySelector('[name="entry.407808012"]').value);
+
+            fetch("https://docs.google.com/forms/d/e/1FAIpQLSeiuOn3Fm05NWdnVG48yeUcyzM9bXsa-yMBdwU0IaD2lFy57w/formResponse", {
+                method: "POST",
+                mode: "no-cors",
+                body: formData
+            })
+            .then(() => {
                 alert("✅ Thank you! Your message has been submitted successfully.");
-                this.reset();
-            }, 500);
+                document.getElementById("contact-form").reset();
+            })
+            .catch(() => {
+                alert("❌ Something went wrong. Please try again.");
+            });
         });
     </script>
 
